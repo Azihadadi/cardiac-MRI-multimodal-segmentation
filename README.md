@@ -2,7 +2,6 @@
 
 Automatic segmentation of the myocardium from **Cine-MRI** and **DE-MRI** using **deep learning fusion schemes (input & output fusion with U-Net)**.  
 
-<img src="./docs/scanner.jpg" alt="scaner" width="500"/>
 ---
 
 ## Overview  
@@ -12,7 +11,9 @@ This repository contains the implementation and results of my MSc thesis (2021),
 - **Approach:** Deep learning (U-Net) with fusion at input and output levels.  
 - **Datasets:** ACDC, Emidec, and CINEDE (in-house dataset).  
 
-Fusion of modalities shows significant improvement over single-modality segmentation.  
+Fusion of modalities shows significant improvement over single-modality segmentation.
+
+<img src="./docs/scanner.jpg" alt="scaner" width="400"/>
 
 ---
 
@@ -61,12 +62,77 @@ Fusion of modalities shows significant improvement over single-modality segmenta
 
 ## Results  
 
-| Modality            | Dice (↑) | Hausdorff Distance (↓) |
-|---------------------|----------|------------------------|
-| Cine-MRI            |        |                      |
-| DE-MRI              |        |                      |
-| Input Fusion        |        |                      |
-| Output Fusion       |        |                      |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Modality</th>
+      <th colspan="4">Dice (↑)</th>
+      <th colspan="4">Hausdorff Distance (↓)</th>
+      <th rowspan="2">Average Loss</th>
+    </tr>
+    <tr>
+      <th>CV</th>
+      <th>MYO</th>
+      <th>Mean</th>
+      <th>STD</th>
+      <th>CV</th>
+      <th>MYO</th>
+      <th>Mean</th>
+      <th>STD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Modality</td>
+      <td>0.869</td>
+      <td>0.655</td>
+      <td>0.762</td>
+      <td>0.136</td>
+      <td>5.977</td>
+      <td>7.143</td>
+      <td>6.539</td>
+      <td>24.425</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Multi Modality (avg. Input/Output)</td>
+      <td>0.949</td>
+      <td>0.867</td>
+      <td>0.908</td>
+      <td>0.043</td>
+      <td>4.3125</td>
+      <td>4.892</td>
+      <td>4.603</td>
+      <td>2.504</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Input Fusion</td>
+      <td>0.943</td>
+      <td>0.849</td>
+      <td>0.896</td>
+      <td>0.049</td>
+      <td>4.607</td>
+      <td>5.401</td>
+      <td>5.004</td>
+      <td>2.582</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Output Fusion</td>
+      <td>0.955</td>
+      <td>0.886</td>
+      <td>0.920</td>
+      <td>0.037</td>
+      <td>4.018</td>
+      <td>4.383</td>
+      <td>4.201</td>
+      <td>2.426</td>
+      <td>0.013</td>
+    </tr>
+  </tbody>
+</table>
+
 
 - Fusion approaches outperform single-modality segmentation.  
 - Registration improves training stability and accuracy.  
