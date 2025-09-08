@@ -2,6 +2,7 @@
 
 Automatic segmentation of the myocardium from **Cine-MRI** and **DE-MRI** using **deep learning fusion schemes (input & output fusion with U-Net)**.  
 
+<img src="./docs/scaner.jpg" alt="scaner" width="500"/>
 ---
 
 ## Overview  
@@ -43,18 +44,18 @@ Fusion of modalities shows significant improvement over single-modality segmenta
 - Resolution adjustment, up-sampling, padding  
 - Contrast enhancement (CLAHE)  
 - Super-resolution (EDSR)  
-- Image registration (custom software)  
+- Image registration (custom software)
+<img src="./docs/registration_tool.png" alt="Registration Tool" width="700"/>   
 
 ### Network Architectures  
-- **Baseline U-Net** – single modality segmentation  
-- **Input Fusion U-Net** – combines Cine & DE as multi-channel input  
-- **Output Fusion U-Net** – independent U-Nets for each modality, then fused outputs  
+- **Baseline U-Net** – single modality segmentation
+<img src="./docs/unet_baseline.png" alt="Baseline U-Net" width="500"/>
 
-Example diagrams:  
-![Baseline U-Net](./docs/unet_baseline.png)  
-![Input Fusion](./docs/unet_input_fusion.png)  
-![Output Fusion](./docs/unet_output_fusion.png)  
-![Registration Tool](./docs/registration_tool.png)  
+- **Input Fusion U-Net** – combines Cine & DE as multi-channel input
+<img src="./docs/unet_input_fusion.png" alt="Input Fusion" width="500"/>
+
+- **Output Fusion U-Net** – independent U-Nets for each modality, then fused outputs
+<img src="./docs/unet_output_fusion.png" alt="Output Fusion" width="500"/> 
 
 ---
 
