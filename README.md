@@ -90,12 +90,3 @@ Example plots:
 - Apply methodology to other organs (e.g., brain MRI fusion)  
 
 ---
-
-## Author  
-**Azadeh Hadadi**  
-MSc in Computer Vision (VIBOT), University of Burgundy  
-
-- [LinkedIn](#)  
-- [Email](#)  
-
----
