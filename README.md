@@ -2,7 +2,7 @@
 
 Automatic segmentation of the myocardium from **Cine-MRI** and **DE-MRI** using **deep learning fusion schemes (input & output fusion with U-Net)**.  
 
-<img src="./docs/scaner.jpg" alt="scaner" width="500"/>
+<img src="./docs/scanner.jpg" alt="scaner" width="500"/>
 ---
 
 ## Overview  
