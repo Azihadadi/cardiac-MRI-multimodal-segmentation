@@ -137,10 +137,8 @@ Fusion of modalities shows significant improvement over single-modality segmenta
 - Fusion approaches outperform single-modality segmentation.  
 - Registration improves training stability and accuracy.  
 
-Example plots:  
-![Dice scores](./docs/dice_scores.png)  
-![Bland-Altman](./docs/bland_altman.png)  
-![Segmentation results](./docs/segmentation_examples.png)  
+Example:  
+<img src="./docs/segmentation_results.png" alt="Segmentation Example" width="500"/> 
 
 ---
 
