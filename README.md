@@ -62,10 +62,10 @@ Example diagrams:
 
 | Modality            | Dice (↑) | Hausdorff Distance (↓) |
 |---------------------|----------|------------------------|
-| Cine-MRI            | XX       | XX                     |
-| DE-MRI              | XX       | XX                     |
-| Input Fusion        | XX       | XX                     |
-| Output Fusion       | XX       | XX                     |
+| Cine-MRI            |        |                      |
+| DE-MRI              |        |                      |
+| Input Fusion        |        |                      |
+| Output Fusion       |        |                      |
 
 - Fusion approaches outperform single-modality segmentation.  
 - Registration improves training stability and accuracy.  
