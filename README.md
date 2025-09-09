@@ -9,11 +9,11 @@ This repository contains the implementation and results of my MSc thesis (2021),
 
 - **Goal:** Improve post-MI (Myocardial Infarction) assessment by combining Cine-MRI and DE-MRI.  
 - **Approach:** Deep learning (U-Net) with fusion at input and output levels.  
-- **Datasets:** ACDC, Emidec, and CINEDE (in-house dataset).  
-
-Fusion of modalities shows significant improvement over single-modality segmentation.
+- **Datasets:** ACDC, Emidec, and CINEDE (in-house dataset). All Cine-MRI and DE-MRI acquisitions of CINEDE were conducted at CHU Dijon Bourgogne (University Hospital, France) using clinical MRI scanners.  
 
 <img src="./docs/scanner.jpg" alt="scaner" width="400"/>
+
+Fusion of modalities shows significant improvement over single-modality segmentation.
 
 ---
 
